@@ -1,0 +1,172 @@
+$clr-bk-body: #2c2a3e;
+$clr-bk-body2: #3f3d56;
+$blue: #226cfc;
+$orange: #ff7f00;
+$pink: #f2bcbc;
+$font-body: "Anonymous Pro";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $clr-bk-body2;
+  font-family: $font-body;
+  display: flex;
+  width: 100%;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+
+  .top {
+    .c1 {
+      background-color: $clr-bk-body;
+      border: 3px black solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .next {
+        text-align: right;
+        width: 100%;
+        margin: -25px;
+      }
+
+      .nmr {
+        background-color: $orange;
+        text-align: center;
+        width: 170px;
+        padding: 7px 10px;
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        border: 4px black solid;
+        margin-bottom: 20px;
+      }
+      img {
+        margin: 20px;
+        width: 75%;
+      }
+    }
+  }
+  .myproduct {
+    height: 80vh;
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 150%;
+      height: 80vh;
+      overflow: scroll;
+
+      border-top: white 1px solid;
+
+      position: absolute;
+      margin-top: 25px;
+
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 18px;
+        color: $orange;
+        border-style: none;
+        border-bottom: white 1px solid;
+      }
+      td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 18px 0;
+        color: white;
+        border-style: none;
+        border-bottom: white 1px solid;
+        div {
+          display: flex;
+          gap: 10px;
+        }
+        img {
+          margin: -10px;
+          width: 60px;
+        }
+        .imguser {
+          width: 35%;
+        }
+      }
+    }
+  }
+  span {
+    align-items: center;
+    display: flex;
+
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+  }
+  .topsellers {
+    position: absolute;
+    bottom: 15vh;
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+
+      border-top: white 1px solid;
+
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 18px;
+        color: $orange;
+        border-style: none;
+        border-bottom: white 1px solid;
+      }
+      td {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 18px;
+        color: white;
+        border-style: none;
+        border-bottom: white 1px solid;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+  .bar {
+    a {
+      svg {
+        width: 130%;
+        height: 40px;
+        fill: $blue;
+      }
+    }
+    .active {
+      svg {
+        fill: white;
+      }
+    }
+    background-color: $clr-bk-body;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    padding: 0 10%;
+    border: 3px black solid;
+  }
+}
